@@ -4,6 +4,7 @@
 *.elf
 *.map
 *.lss
+*.hex
 .cproject
 .project
 build
