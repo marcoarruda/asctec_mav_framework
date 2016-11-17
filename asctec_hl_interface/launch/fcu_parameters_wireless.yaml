@@ -1,4 +1,4 @@
-fcu/serial_port:            /dev/ttyUSB0
+fcu/serial_port:            /dev/ttyUSB1
 fcu/baudrate:               57600
 fcu/frame_id:               fcu
 fcu/packet_rate_imu:        20.0
