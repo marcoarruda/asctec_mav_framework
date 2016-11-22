@@ -53,7 +53,7 @@ void PTU_init(void)
 
 #ifdef PELICAN_PTU
 
-    CAMERA_ptu.servo_pitch_offset=61500;
+	CAMERA_ptu.servo_pitch_offset=92250;
 	CAMERA_ptu.servo_pitch_scale=54853;
 	CAMERA_ptu.servo_pitch_min=46000;
 	CAMERA_ptu.servo_pitch_max=128000;
@@ -74,7 +74,7 @@ void PTU_update(void)
 	{
 		ptu_cnt=0;
     	int angle_pitch, angle_roll;
-#ifdef CAMMOUNT_XCONFIG	//rotate pitch/roll tiltcompensation for 45°
+#ifdef CAMMOUNT_XCONFIG	//rotate pitch/roll tiltcompensation for 45ï¿½
 #ifndef CAM_FACING_FRONT_RIGHT
     angle_pitch=IMU_CalcData.angle_nick*707/1000+IMU_CalcData.angle_roll*707/1000;
     angle_roll=IMU_CalcData.angle_roll*707/1000-IMU_CalcData.angle_nick*707/1000;
