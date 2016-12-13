@@ -226,11 +226,20 @@ void mainloop(void) //mainloop is triggered at 1 kHz
 	//run SDK mainloop. Please put all your data handling / controller code in sdk.c
 	SDK_mainloop();
 
-    //write data to transmit buffer for immediate transfer to LL processor
-    HL2LL_write_cycle();
+	//write data to transmit buffer for immediate transfer to LL processor
+	HL2LL_write_cycle();
 
-    //control pan-tilt-unit ("cam option 4" @ AscTec Pelican)
-    PTU_update();
+	//control pan-tilt-unit ("cam option 4" @ AscTec Pelican)
+	//PTU_update();
+	// int min = 46000, max = 128000;
+	int min = 97500, max = 98000;
+	if(RO_ALL_Data.channel[6] > 1024) {
+		SERVO_roll_move(min);
+		SERVO_pitch_move(min);
+	} else {
+		SERVO_roll_move(max);
+		SERVO_pitch_move(max);
+	}
 
 
 }

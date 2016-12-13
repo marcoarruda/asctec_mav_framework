@@ -3,7 +3,7 @@ fcu/baudrate:               57600
 fcu/frame_id:               fcu
 fcu/packet_rate_imu:        20.0
 fcu/packet_rate_rc:         2.0
-fcu/packet_rate_gps:        2.0
+fcu/packet_rate_gps:        10.0
 fcu/packet_rate_ssdk_debug: 2.0
 fcu/packet_rate_ekf_state:  0.0
 fcu/max_velocity_xy:        0.5

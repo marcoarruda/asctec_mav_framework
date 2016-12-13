@@ -1,0 +1,4 @@
+<launch>
+  <node name="gps_conversion" pkg="asctec_hl_gps" type="gps_conversion_node" output="screen" clear_params="true" />
+  <node name="gps_set_reference" pkg="asctec_hl_gps" type="set_gps_reference_node" output="screen" clear_params="true" />
+</launch>
